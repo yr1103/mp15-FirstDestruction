@@ -23,4 +23,11 @@ public class Slime
         Console.WriteLine($"{Name}이 공격을 시작했다!");
         Console.WriteLine($"{Damage} 만큼 피해를 입혔다!");
     }
+
+    public void TakeDamage(int damage)
+    {
+        Console.WriteLine($"{Name}이 공격을 받았다!");
+        _health -= damage;
+        Console.WriteLine($"{Name}의 체력이 {damage}만큼 감소했다");
+    }
 }
