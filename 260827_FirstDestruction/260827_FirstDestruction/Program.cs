@@ -9,7 +9,7 @@ class Program
         Slime slime = new("RED-RED", 300, 150);
         slime.Attack();
         slime.TakeDamage(100);
-        
+        slime.TakeDamage(100);
     }
 
     private Player player = new Player("용사", 100, 25);
