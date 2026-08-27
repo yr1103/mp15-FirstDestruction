@@ -2,9 +2,10 @@
 
 public class Player
 {
-    public string Name { get; protected set; }
-    public int Health { get; set; }
-    public int Damage { get; set; }
+
+    public string Name { get; }
+    public int Health { get; }
+    public int Damage { get; }
 
     public Player(string name, int health, int damage)
     {
