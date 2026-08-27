@@ -2,7 +2,7 @@
 
 public class Player
 {
-    public string Name { get; set; }
+    public string Name { get; protected set; }
     public int Health { get; set; }
     public int Damage { get; set; }
 
