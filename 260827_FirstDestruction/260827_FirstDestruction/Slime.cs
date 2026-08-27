@@ -2,6 +2,7 @@ namespace _260827_FirstDestruction;
 
 public class Slime
 {
+    private const string postFix = "슬라임";
     private string _name;
     private int _health;
     private int _damage;
@@ -12,8 +13,14 @@ public class Slime
 
     public Slime(string name, int health, int damage)
     {
-        _name = name;
+        _name = name + postFix;
         _health = health;
         _damage = damage;
+    }
+
+    public void Attack()
+    {
+        Console.WriteLine($"{Name}이 공격을 시작했다!");
+        Console.WriteLine($"{Damage} 만큼 피해를 입혔다!");
     }
 }
