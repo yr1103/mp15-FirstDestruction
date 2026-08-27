@@ -6,11 +6,11 @@ class Program
     static void Main(string[] args)
     {
         // Console.WriteLine("Hello Destruction!");
-        Slime slime = new("RED-RED", 300, 150);
+        Slime slime = new("RED-RED", "슬라슬라", 300, 150);
         slime.Attack();
-        slime.TakeDamage(100);
-        slime.TakeDamage(100);
-        slime.TakeDamage(100);
+        slime.TakeDamage();
+        slime.TakeDamage();
+        slime.TakeDamage();
     }
 
     private Player player = new Player("용사", 100, 25);
