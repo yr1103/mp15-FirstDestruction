@@ -12,6 +12,4 @@ public class Player
         Health = health;
         Damage = damage;
     }
-    
-
 }
