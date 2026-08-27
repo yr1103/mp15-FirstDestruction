@@ -1,4 +1,5 @@
 ﻿using System;
+using _260827_FirstDestruction;
 
 class Program
 {
@@ -6,4 +7,6 @@ class Program
     {
         Console.WriteLine("Hello Destruction!");
     }
+
+    private Player player = new Player("용사", 100, 25);
 }

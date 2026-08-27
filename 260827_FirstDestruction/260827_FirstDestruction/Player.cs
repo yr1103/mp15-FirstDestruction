@@ -13,5 +13,5 @@ public class Player
         Damage = damage;
     }
     
-    
+
 }
