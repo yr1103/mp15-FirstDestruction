@@ -10,6 +10,7 @@ class Program
         slime.Attack();
         slime.TakeDamage(100);
         slime.TakeDamage(100);
+        slime.TakeDamage(100);
     }
 
     private Player player = new Player("용사", 100, 25);
