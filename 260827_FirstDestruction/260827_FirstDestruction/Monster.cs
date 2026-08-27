@@ -1,18 +1,26 @@
 ﻿namespace _260827_FirstDestruction;
 
-public class Monster
+public abstract class Monster
 {
-    public int Health { get; set; }
-    public string Name { get; set; }
-    public int Damage { get; set; }
+    protected string _name;
+    protected string _howl;
+    protected int _health;
+    protected int _damage;
+    public int Health => _health;
+    public string Name => _name;
+    public string Howl => _howl;
+    public int Damage => _damage;
 
-    public void TakeDamage(int damage)
+    public Monster(string name, string howl, int health, int damage)
     {
-        Health -= damage;
-
-        if (Health <= 0)
-        {
-            Health = 0;
-        }
+        _name = name;
+        _howl = howl;
+        _health = health;
+        _damage = damage;
     }
+    public virtual void Howling()
+    {
+        Console.WriteLine($"{Name}이 울부짖습니다 {Howl}");
+    }
+    public abstract void TakeDamage();
 }
